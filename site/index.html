@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OLKIO.IT – ICT služby pro firmy</title>
+  <meta name="description" content="ICT služby pro firmy: správa IT, konzultace, kybernetická bezpečnost, hardware a sítě. OLKIO.IT, Praha. info@olkioit.cz">
+  <meta name="theme-color" content="#954FEB">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/manrope-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    // Ruční volba režimu (světlý/tmavý) má přednost před nastavením systému.
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="OLKIO.IT – ICT služby pro firmy">
+  <meta property="og:description" content="Správa IT, konzultace, bezpečnost, hardware a sítě. Praha.">
+  <meta property="og:locale" content="cs_CZ">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OLKIO.IT s.r.o.",
+    "email": "info@olkioit.cz",
+    "taxID": "30103797",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Korunní 2569/108",
+      "addressLocality": "Praha 10",
+      "postalCode": "101 00",
+      "addressCountry": "CZ"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přeskočit na obsah</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" aria-label="OLKIO.IT – úvod"><svg class="logo-signet" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="50" fill="#954FEB"/><circle cx="42.86" cy="50" r="17.86" fill="none" stroke="#fff" stroke-width="7.14"/><circle cx="71.43" cy="65.48" r="5.95" fill="#fff"/></svg><span class="logo-text">OLKIO<span>.IT</span></span></a>
+      <div class="header-actions">
+        <nav aria-label="Hlavní navigace">
+          <ul class="nav">
+            <li><a href="#sluzby">Služby</a></li>
+            <li><a href="#proc-my">Proč my</a></li>
+            <li><a href="#kontakt" class="btn btn-small">Kontakt</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="theme-toggle" aria-label="Přepnout barevný režim">
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="obsah">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">ICT služby pro firmy</p>
+          <h1>IT, které prostě funguje.</h1>
+          <p class="lead">Staráme se o technologie vaší firmy od počítačů a sítí po bezpečnost a strategii. Abyste se vy mohli věnovat svému podnikání.</p>
+          <div class="hero-actions">
+            <a href="mailto:info@olkioit.cz" class="btn">Napište nám</a>
+            <a href="#sluzby" class="btn btn-ghost">Co děláme</a>
+          </div>
+        </div>
+
+        <svg class="network" viewBox="0 0 480 420" role="img" aria-label="Ilustrace počítačové sítě: zařízení propojená s centrálním uzlem">
+        <g class="net-links">
+          <path d="M240 210 L240 50"/>
+          <path d="M240 210 L405 115"/>
+          <path d="M240 210 L420 290"/>
+          <path d="M240 210 L250 370"/>
+          <path d="M240 210 L75 300"/>
+          <path d="M240 210 L70 125"/>
+          <path class="thin" d="M240 50 L150 35"/>
+          <path class="thin" d="M70 125 L150 35"/>
+          <path class="thin" d="M405 115 L462 200"/>
+          <path class="thin" d="M420 290 L462 200"/>
+          <path class="thin" d="M420 290 L360 395"/>
+          <path class="thin" d="M250 370 L360 395"/>
+          <path class="thin" d="M250 370 L140 395"/>
+          <path class="thin" d="M75 300 L140 395"/>
+          <path class="thin" d="M75 300 L18 215"/>
+          <path class="thin" d="M70 125 L18 215"/>
+          <path class="thin" d="M240 50 L405 115"/>
+        </g>
+        <g class="net-flow">
+          <path style="--d:2.4s" d="M240 210 L240 50"/>
+          <path class="reverse" style="--d:3.1s" d="M240 210 L405 115"/>
+          <path style="--d:2.7s" d="M240 210 L420 290"/>
+          <path class="reverse" style="--d:3.4s" d="M240 210 L250 370"/>
+          <path style="--d:2.2s" d="M240 210 L75 300"/>
+          <path class="reverse" style="--d:2.9s" d="M240 210 L70 125"/>
+        </g>
+        <g class="net-small">
+          <circle style="--delay:0.0s" cx="150" cy="35" r="6"/>
+          <circle style="--delay:0.7s" cx="462" cy="200" r="6"/>
+          <circle style="--delay:1.4s" cx="360" cy="395" r="6"/>
+          <circle style="--delay:2.1s" cx="140" cy="395" r="6"/>
+          <circle style="--delay:2.8s" cx="18" cy="215" r="6"/>
+        </g>
+        <g class="net-node" transform="translate(240 50)">
+          <circle r="26"/>
+          <g transform="translate(-12 -12)"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18Z"/></g>
+        </g>
+        <g class="net-node" transform="translate(405 115)">
+          <circle r="26"/>
+          <g transform="translate(-12 -12)"><rect x="4" y="3" width="16" height="7" rx="1.5"/><rect x="4" y="14" width="16" height="7" rx="1.5"/><path d="M8 6.5h.01M8 17.5h.01"/></g>
+        </g>
+        <g class="net-node" transform="translate(420 290)">
+          <circle r="26"/>
+          <g transform="translate(-12 -12)"><path d="M12 3 5 6v5c0 4 3 7.5 7 9 4-1.5 7-5 7-9V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></g>
+        </g>
+        <g class="net-node" transform="translate(250 370)">
+          <circle r="26"/>
+          <g transform="translate(-12 -12)"><path d="M2 9a15 15 0 0 1 20 0M5.5 12.5a10 10 0 0 1 13 0M9 16a5 5 0 0 1 6 0M12 20h.01"/></g>
+        </g>
+        <g class="net-node" transform="translate(75 300)">
+          <circle r="26"/>
+          <g transform="translate(-12 -12)"><rect x="4" y="5" width="16" height="10" rx="1.5"/><path d="M2 19h20"/></g>
+        </g>
+        <g class="net-node" transform="translate(70 125)">
+          <circle r="26"/>
+          <g transform="translate(-12 -12)"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></g>
+        </g>
+        <g class="net-hub" transform="translate(240 210)">
+          <circle class="pulse" r="42"/>
+          <circle class="pulse pulse-2" r="42"/>
+          <circle class="core" r="42"/>
+          <circle class="mark" cx="-6" cy="0" r="15"/>
+          <circle class="mark-dot" cx="18" cy="13" r="5"/>
+        </g>
+        </svg>
+      </div>
+    </section>
+
+    <section id="sluzby" class="section">
+      <div class="container">
+        <h2>Co děláme</h2>
+        <p class="section-lead">Pět oblastí, jeden partner pro celé IT vaší firmy.</p>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            </div>
+            <h3>ICT služby</h3>
+            <p>Kompletní péče o IT vaší firmy, dlouhodobě nebo jednorázově.</p>
+            <ul>
+              <li>správa počítačů, serverů a uživatelských účtů</li>
+              <li>Microsoft 365 / Google Workspace, e-mail a sdílení dat</li>
+              <li>zálohování a obnova dat</li>
+              <li>hosting, cloud a webová řešení</li>
+              <li>helpdesk a podpora uživatelů, na dálku i na místě</li>
+              <li>školení zaměstnanců</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/><path d="M9 10h6M9 14h4"/></svg>
+            </div>
+            <h3>Konzultace</h3>
+            <p>Pomůžeme vám rozhodnout dobře, ještě než utratíte peníze.</p>
+            <ul>
+              <li>audit stávajícího IT a návrh zlepšení</li>
+              <li>IT strategie a plán rozvoje</li>
+              <li>výběr technologií, dodavatelů a licencí</li>
+              <li>odborné posudky a studie</li>
+              <li>dohled nad IT projekty</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Bezpečnost</h3>
+            <p>Chráníme vaše data, systémy i zaměstnance.</p>
+            <ul>
+              <li>bezpečnostní audit a analýza rizik</li>
+              <li>testování zranitelností</li>
+              <li>ochrana zařízení, firewally, správa přístupů a MFA</li>
+              <li>zálohovací strategie a plán obnovy po havárii</li>
+              <li>školení zaměstnanců v rozpoznávání phishingu</li>
+              <li>pomoc s požadavky NIS2 a GDPR</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>
+            </div>
+            <h3>Hardware</h3>
+            <p>Správné vybavení, správně nainstalované.</p>
+            <ul>
+              <li>návrh a dodávka počítačů, notebooků, serverů a periferií</li>
+              <li>instalace, konfigurace a nasazení</li>
+              <li>servis, opravy a upgrady</li>
+              <li>evidence majetku a životní cyklus zařízení</li>
+              <li>ekologická likvidace a bezpečné smazání dat</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="5" rx="1"/><rect x="2" y="17" width="6" height="5" rx="1"/><rect x="16" y="17" width="6" height="5" rx="1"/><path d="M12 7v5M5 17v-2.5h14V17M12 12v2.5"/></svg>
+            </div>
+            <h3>Sítě</h3>
+            <p>Rychlá, stabilní a bezpečná síť v kanceláři i mezi pobočkami.</p>
+            <ul>
+              <li>návrh a realizace LAN a Wi-Fi sítí</li>
+              <li>strukturovaná kabeláž, racky a datové rozvaděče</li>
+              <li>routery, switche, firewally a VPN</li>
+              <li>měření, diagnostika a optimalizace sítě</li>
+              <li>monitoring a dohled</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proc-my" class="section section-tinted">
+      <div class="container">
+        <h2>Proč OLKIO.IT</h2>
+        <div class="benefits">
+          <div class="benefit">
+            <h3>Jeden partner pro celé IT</h3>
+            <p>Od kabelu po cloud, bez přehazování odpovědnosti.</p>
+          </div>
+          <div class="benefit">
+            <h3>Srozumitelně</h3>
+            <p>Vysvětlíme, co děláme a proč.</p>
+          </div>
+          <div class="benefit">
+            <h3>Bezpečnost v základu</h3>
+            <p>Zabezpečení řešíme od začátku, ne až po incidentu.</p>
+          </div>
+          <div class="benefit">
+            <h3>Rychlá reakce</h3>
+            <p>Podpora, když ji potřebujete.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt" class="section">
+      <div class="container contact">
+        <h2>Pojďme to probrat</h2>
+        <p class="section-lead">Napište nám, s čím potřebujete pomoct. Ozveme se co nejdřív.</p>
+        <a href="mailto:info@olkioit.cz" class="btn btn-large">info@olkioit.cz</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="footer-logo">OLKIO<span>.IT</span></p>
+        <address>
+          OLKIO.IT s.r.o.<br>
+          Korunní 2569/108, Vinohrady<br>
+          101 00 Praha 10
+        </address>
+      </div>
+      <div>
+        <p>IČO: 30103797</p>
+        <p>Zapsáno v obchodním rejstříku vedeném Městským soudem v Praze, oddíl C, vložka 457193.</p>
+        <p><a href="mailto:info@olkioit.cz">info@olkioit.cz</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 OLKIO.IT s.r.o.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.querySelector('.theme-toggle');
+      var media = window.matchMedia('(prefers-color-scheme: dark)');
+
+      function current() {
+        return root.dataset.theme || (media.matches ? 'dark' : 'light');
+      }
+      function sync() {
+        btn.setAttribute('aria-label', current() === 'dark' ? 'Přepnout na světlý režim' : 'Přepnout na tmavý režim');
+      }
+
+      btn.addEventListener('click', function () {
+        var next = current() === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        sync();
+      });
+      media.addEventListener('change', sync);
+      sync();
+    })();
+  </script>
+</body>
+</html>
