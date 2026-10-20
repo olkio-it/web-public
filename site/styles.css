@@ -198,6 +198,9 @@ a:hover { text-decoration-thickness: 2px; }
   font-weight: 500;
 }
 .nav a:not(.btn):hover { color: var(--accent-text); }
+.nav-phone a { color: var(--text); text-decoration: none; font-weight: 600; white-space: nowrap; }
+.nav-phone a:hover { color: var(--accent-text); }
+.phone-icon { display: none; }
 
 .header-actions { display: flex; align-items: center; gap: 1rem; }
 .theme-toggle {
@@ -442,7 +445,12 @@ address { font-style: normal; }
 
 @media (max-width: 560px) {
   .nav { gap: 1rem; }
-  .nav li:not(:last-child) { display: none; }
-  .header-actions { gap: .6rem; }
+  .nav li:not(.nav-contact):not(.nav-phone) { display: none; }
+  .nav-phone a { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--border); border-radius: 50%; }
+  .phone-number { display: none; }
+  .phone-icon { display: inline; font-size: 1rem; }
+  .header-actions { gap: .4rem; }
+  .nav { gap: .5rem; }
+  .theme-toggle { width: 36px; height: 36px; }
   .hero-actions .btn { flex: 1 1 auto; text-align: center; }
 }
